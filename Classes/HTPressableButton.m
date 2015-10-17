@@ -30,6 +30,13 @@
     return self;
 }
 
+#pragma mark Nib
+
+-(void)awakeFromNib {
+    [self setDefaultShadowHeightForStyle:_style];
+    [self setStyle:_style];
+}
+
 #pragma mark - Set Button Style
 
 - (void) setButtonColor:(UIColor *)buttonColor
